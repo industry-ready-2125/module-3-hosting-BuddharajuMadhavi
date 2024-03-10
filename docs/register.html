@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: auto;
+            margin: auto;
+            font-family: Bradley hand, cursive;
+        }
+
+        body {
+            background-image: url('drift.jpeg');
+            background-attachment: fixed;
+            background-size: cover;
+            scrollbar-width: 0;
+        }
+
+        #maindiv {
+            background-color: rgba(32, 73, 73, 0.6);
+            width: 500px;
+            height: auto;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 33px;
+            margin-bottom: 33px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .inputtext {
+            background-color: rgb(70, 69, 69);
+            border-radius: 5px;
+            width: 225px;
+            height: 30px;
+            color: white;
+        }
+
+        .labelstyle {
+            color: bisque;
+        }
+
+        .buttonstyle {
+            border-radius: 7px;
+            margin-right: 5px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: bisque;
+            border: 2px solid black;
+            color: rgb(70, 69, 69);
+        }
+
+        .button:hover {
+            background-color: azure;
+            border: none;
+            color: black;
+        }
+
+        .elementstyle {
+            padding: 7px;
+        }
+
+        .textarea {
+            background-color: rgb(70, 69, 69);
+            border-radius: 5px;
+            color: white;
+            border: 2px solid black;
+        }
+        a:link, a:visited {
+            width: 100px;
+            background-color: bisque;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Bradley hand, cursive;
+            margin-left: 50px;
+          }
+          
+          a:hover, a:active {
+            background-color:azure;
+          }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="homepage.html" style="margin-top:20px;"><img src="download.png" alt="home" float="left" width="40px" height="40px" style="border-radius: 100%; "></a>
+        <p style="margin-top:10px; font-size:26px; font-weight:400;color:black; font-family:Bradley hand, cursive; text-align:center">Race Wars</p>
+    </div>
+    <div id="maindiv">
+        <form action="/action.php" class="child" novalidate>
+            <h2 style="text-align: center; padding: 20px; color: bisque; margin: auto"><b>Register</b></h2><br>
+            <div class="elementstyle">
+                <label class="labelstyle" for="firstname">First Name</label><br>
+                <input class="inputtext" type="text" id="firstname">
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="lastname">Last Name</label><br>
+                <input class="inputtext" type="text" id="lastname">
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="dob">Date of Birth</label><br>
+                <input class="inputtext" type="date" id="dob">
+            </div>
+            <div class="elementstyle" style="color: bisque;">Gender
+                <br>
+                <input type="radio" id="male" name="gender">
+                <label style="color: bisque" for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label style="color: bisque" for="female">Female</label><br>
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="address">Address</label>
+                <br>
+                <textarea class="textarea" name="myReview" id="address" cols="40" rows="5"></textarea>
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="phone">Phone No.</label><br>
+                <input class="inputtext" type="text" id="phone">
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="mail">Mail Id</label><br>
+                <input class="inputtext" type="text" id="mail">
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="password">Set Password<br>
+                    <input class="inputtext" type="password" id="password">
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="cpassword">Confirm Password<br>
+                    <input class="inputtext" type="password" id="cpassword">
+            </div>
+            <div class="elementstyle" style="margin-left: 60px;">
+                <button type="submit" class="buttonstyle button">Submit</button>
+                <button type="reset" class="buttonstyle button">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div style="padding-top:20px; text-align:center">
+        <p style="color:black;">&#169; Since 1999-2013 Race wars,Inc. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
