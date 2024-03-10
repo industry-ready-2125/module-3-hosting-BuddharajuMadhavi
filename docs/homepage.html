@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #ribbon{
+            width:auto;
+            height:auto;
+            padding:10px;
+            background-color: rgb(36, 36, 36);
+        }
+        #logo{
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .parent{
+            display: flex;
+            
+        }
+        .child{
+            flex: 1;
+        }
+        .titletext{
+            text-align: right;
+            padding-top: 50px;
+            padding-right: 100px;
+            color:bisque;
+            font-family: Bradley hand, cursive;
+        }
+        #content{
+            background-color: bisque;
+            width:1535px;
+            height:505px;
+        }
+        tr :hover{
+            background-color: azure;
+            border-radius: 10px;
+        }
+        a:link, a:visited {
+            width: 200px;
+            background-color: rgb(36, 36, 36);
+            color: bisque;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Bradley hand, cursive;
+            font-size: 20px;
+          }
+          
+          a:hover, a:active {
+            padding:22px;
+            background-color:black;
+          }
+        .centerit{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" id="ribbon">
+        <div class="child"><img id="logo" src="download.jpeg" alt="College logo" width="200" height="200" float="left"></div>
+        <div class="child titletext">
+            <h1>Race Wars</h1>
+            <br>
+            <p>It doesn't matter whether you win by an inch or a mile, winning is winning.</p>
+        </div>
+    </div>
+    <div id="content">
+        <div class="centerit">
+            <table>
+                <tr>
+                    <td><a href="login.html" target="_self">Get started</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="parent" style="margin-top:50px;">
+            <div class="child centerit" style="margin-left:30px; margin-right:30px; width:300px; height:250px; border-radius:10px;background-color:rgb(36, 36, 36)">
+                <img src="race1.jpeg" alt="1" width="300px" height="200px" ><br>
+            </div>
+            <div class="child centerit" style="margin-left:30px; margin-right:30px; width:300px; height:250px; border-radius:10px;background-color:rgb(36, 36, 36)">
+                <img src="race2.jpeg" alt="1" width="300px" height="200px" >
+            </div>
+            <div class="child centerit" style="margin-left:30px; margin-right:30px; width:300px; height:250px; border-radius:10px;background-color:rgb(36, 36, 36)">
+                <img src="race3.jpeg" alt="1" width="300px" height="200px" >
+            </div>
+            <div class="child centerit" style="margin-left:30px; margin-right:30px; width:300px; height:250px; border-radius:10px;background-color:rgb(36, 36, 36)">
+                <img src="race4.jpeg" alt="1" width="300px" height="200px" >
+            </div>
+        </div>
+        <div style="padding-top:40px; text-align:center">
+            <p style="color:black;">&#169; Since 1999-2013 Race wars,Inc. All rights reserved.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
