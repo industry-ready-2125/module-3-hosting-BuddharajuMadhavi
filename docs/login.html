@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: auto;
+            margin: auto;
+            font-family: Bradley hand, cursive;
+        }
+
+        body {
+            background-image: url('drift.jpeg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #maindiv {
+            background-color: rgba(32, 73, 73, 0.8);
+            width: 350px;
+            height: 350px;
+            border-radius: 20px;
+            margin-top: 50px;
+            display:flex;
+            align-items: center;
+        }
+
+        .inputtext {
+            background-color: rgb(70, 69, 69);
+            border-radius: 5px;
+            width: 225px;
+            height: 30px;
+            color: white;
+        }
+
+        .labelstyle {
+            color: bisque;
+        }
+
+
+        .buttonstyle {
+            border-radius: 7px;
+            margin-right: 5px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+        }  
+        .button {
+            background-color: bisque;
+            border: 2px solid black;
+            color: rgb(70, 69, 69);
+        }
+        .button:hover{
+            background-color: azure;
+            border: none;
+            color: black;
+        }
+        .elementstyle{
+            padding: 7px;;
+        }
+        #home:link, #home:visited {
+            width: 100px;
+            background-color: bisque;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: Bradley hand, cursive;
+            margin-left: 50px;
+          }
+          
+          #home:hover, #home:active {
+            background-color:azure;
+          }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a  id="home" href="homepage.html" style="margin-top:20px;"><img src="download.png" alt="home" float="left" width="40px" height="40px" style="border-radius: 100%; "></a>
+        <p style="margin-top:10px; font-size:26px; font-weight:400;color:black; font-family:Bradley hand, cursive; text-align:center">Race Wars</p>
+    </div>
+    <div id="maindiv">
+        <form action="/action.php" novalidate>
+            <h2 style="text-align: center; padding: 20px; color: bisque;"><b>Login</b></h2>
+            <div class="elementstyle">
+                <label class="labelstyle" for="username">Username</label><br>
+                <input class="inputtext" type="text" id="username">
+            </div>
+            <div class="elementstyle">
+                <label class="labelstyle" for="password">Password<br>
+                <input class="inputtext" type="password" id="password"><br>
+                <a href="forgot.html" target="_self" style="text-decoration: none; color: bisque;padding-right:20px;">Forgot Password ?</a>
+                <a href="register.html" target="_self" style="text-decoration: none; color: black;">Sign Up</a>
+            </div>
+            <div class="elementstyle">
+                <button type="submit" class="buttonstyle button" >Submit</button>
+                <button type="reset" class="buttonstyle button">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div style="padding-top:100px; text-align:center">
+        <p style="color:black;">&#169; Since 1999-2013 Race wars,Inc. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
